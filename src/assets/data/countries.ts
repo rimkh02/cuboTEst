@@ -1,0 +1,30 @@
+export const countries = [
+  { id: '1', code: 'FR', labelEn: 'France', labelFr: 'France', phone: '+33', suggested: true },
+  { id: '2', code: 'GP', labelEn: 'Guadeloupe', labelFr: 'Guadeloupe', phone: '+590' },
+  { id: '3', code: 'GF', labelEn: 'French Guiana', labelFr: 'Guyane française', phone: '+594' },
+  { id: '4', code: 'MQ', labelEn: 'Martinique', labelFr: 'Martinique', phone: '+596' },
+  { id: '5', code: 'NC', labelEn: 'New Caledonia', labelFr: 'Nouvelle-Calédonie', phone: '+687' },
+  { id: '6', code: 'YT', labelEn: 'Mayotte', labelFr: 'Mayotte', phone: '+262' },
+  {
+    id: '7',
+    code: 'PF',
+    labelEn: 'French Polynesia',
+    labelFr: 'Polynésie française',
+    phone: '+689',
+  },
+  { id: '8', code: 'RE', labelEn: 'Reunion', labelFr: 'Réunion', phone: '+262' },
+  {
+    id: '9',
+    code: 'PM',
+    labelEn: 'Saint Pierre and Miquelon',
+    labelFr: 'Saint Pierre et Miquelon',
+    phone: '+508',
+  },
+  {
+    id: '10',
+    code: 'WF',
+    labelEn: 'Wallis and Futuna',
+    labelFr: 'Wallis et Futuna',
+    phone: '+681',
+  },
+];
