@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_minimal_material_kit_react=self.webpackChunk_minimal_material_kit_react||[]).push([[177],{36177:function(i,e,n){n.r(e),n.d(e,{default:function(){return a}});n(47313);var t=n(46417);function a(){return(0,t.jsx)("div",{children:(0,t.jsx)("h1",{children:"Hello, this is a simple div inside a TSX component!"})})}}}]);
