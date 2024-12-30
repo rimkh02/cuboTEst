@@ -67,5 +67,8 @@ export enum ServicePaths {
 
   //test
   tmp_test = '/employees-expenses',
+  tmp_testt = '/export/employees-expenses/csv',
+  tmp_notif = '/employees-expenses/staff/notifications',
+  tmp_pdf = '/monthly-invoice',
   // post_test = '/employees-expenses/:expenseId=${/respond',
 }

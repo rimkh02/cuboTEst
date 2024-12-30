@@ -41,7 +41,7 @@ import {
   getEmployeesReportingRequest,
 } from '../slices/employee';
 import { getAllInvoices } from '../slices/invoice';
-import { fetchDataStart } from '../slices/dataSlice'
+import { fetchDatacsvStart, fetchDatapdfStart, fetchDataStart, notificationSend } from '../slices/dataSlice'
 import { updateDataStart } from '../slices/dataSlice'
 
 import {
@@ -101,7 +101,7 @@ import {
   handleReportingEmployees,
 } from './handlers/employee';
 import { handleGetAllInvoices } from './handlers/invoice';
-import { handleGetAllData, handleUpdateData} from './handlers/dataSaga';
+import { handleGetAllData, handleGetAllDatacsv, handleGetAllDatapdf, handlenotificationSend, handleUpdateData} from './handlers/dataSaga';
 import {
   handleEncouragement,
   handleEvent,
@@ -172,7 +172,10 @@ export default function* rootSaga() {
   yield takeLeading(getAllInvoices.type, handleGetAllInvoices);
   //data
   yield takeLeading(fetchDataStart.type, handleGetAllData );
+  yield takeLeading(fetchDatacsvStart.type, handleGetAllDatacsv );
   yield takeLeading(updateDataStart.type, handleUpdateData );
+  yield takeLeading(notificationSend.type, handlenotificationSend );
+  yield takeLeading(fetchDatapdfStart.type, handleGetAllDatapdf );
   // transations
   yield takeLeading(getTransations.type, handleGetAllTransations);
 
